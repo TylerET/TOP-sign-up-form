@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content-left">
+
+        <div class="header">
+            <img src="images/odin-lined.png" alt="Odin, the norse god" id="logo">
+            <h1>Odin</h1>
+        </div>
+        <div class="credit">
+            Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a>
+        </div>
+    </div>
+
+    <div class="content-right">
+        
+        <section class="info">
+            <div class="pitch">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p>Sign up now to get started</p>
+                <p>you know you want to</p>
+            </div>
+
+        </section>
+        <section class="forms">
+            <form action="#" method="post" onSubmit="return false;" id="form">
+                
+            
+                <fieldset>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password</label>
+                    <input class="error" type="password" id="password" name="password" onkeyup="check();" required>
+                    <span id="message"></span>
+                </fieldset>
+            
+                <fieldset>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone"   pattern="[0-9]{3}[0-9]{3}[0-9]{4}" minlength="10" maxlength="11">
+                    <label for="passwordConfirm">Confirm Password</label>
+                    <input class="error" type="password" id="passwordConfirm" name="passwordConfirm" onkeyup="check();" required>
+                    <span id="message"></span>
+                </fieldset>
+            </form>
+        </section>
+        <section class="createAccount">
+            <div>
+                <button form="form" id="submit" type="submit">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+
+        </section>
+
+
+
+    </div>
+    
+</body>
+</html>
+
+
+
